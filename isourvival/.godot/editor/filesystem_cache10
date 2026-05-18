@@ -1,0 +1,10 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1779139428
+icon.svg::CompressedTexture2D::5990777125833639068::1779127194::1779127201::1::::<><><>0<>0<>8335e9a84067c3f58d00507d3cb8c786<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1779139381
+player.png::CompressedTexture2D::3156129388078258780::1779129625::1779139443::1::::<><><>0<>0<>2534a6c6aeef28aa469f907bf9055b34<>res://.godot/imported/player.png-be2216fcaabb5c62aa2466cd9a5726a8.ctex::
+tileset.png::CompressedTexture2D::4068984599602637982::1779138755::1779139443::1::::<><><>0<>0<>8cf4e23a1fe8e1b4d686baeb6ad9ed3c<>res://.godot/imported/tileset.png-c50288acd069fa293d7940a084811264.ctex::
+::res://scenes/::1779139356
+player.gd::GDScript::2317771159788397071::1779133397::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::4720709567146121212::1779133895::0::1::::<><><>0<>0<><>::uid://byuon75b1a81c::::res://assets/player.png<>uid://8a0l8lug2s7p::::res://scenes/player.gd
+scenario_1.tscn::PackedScene::6410631800834347706::1779139356::0::1::::<><><>0<>0<><>::uid://6k74vkyeeoke::::res://assets/tileset.png<>uid://b8i0nq1ped6no::::res://scenes/player.tscn
