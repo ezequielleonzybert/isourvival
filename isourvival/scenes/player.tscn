@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://8a0l8lug2s7p" path="res://scenes/player.gd" id="1_g2els"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
-radius = 12.0415945
+radius = 4.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qhqgy"]
 animations = [{
@@ -26,4 +26,5 @@ script = ExtResource("1_g2els")
 shape = SubResource("CircleShape2D_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1272492691]
+position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_qhqgy")
