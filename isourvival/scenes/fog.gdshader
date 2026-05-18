@@ -8,7 +8,7 @@ void fragment() {
     float center_mask = sides.x * sides.y;
     
     // Invierte el resultado para que el centro sea transparente y los bordes negros
-    float alpha = 0.5 - center_mask;
+    float alpha = 0.4 - center_mask;
     
     COLOR = vec4(0.0, 0.0, 0.0, alpha);
 }
