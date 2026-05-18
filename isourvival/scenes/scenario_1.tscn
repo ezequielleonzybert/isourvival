@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bx8bt1v18ljtm" path="res://assets/tileset.png" id="1_n86tg"]
 [ext_resource type="PackedScene" uid="uid://b8i0nq1ped6no" path="res://scenes/player.tscn" id="2_ihi4u"]
+[ext_resource type="Shader" uid="uid://b10jix2omin3" path="res://scenes/fog.gdshader" id="3_ihi4u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aowj2"]
 resource_name = "tileset"
@@ -22,6 +23,11 @@ tile_size = Vector2i(55, 24)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_aowj2")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a8iiw"]
+shader = ExtResource("3_ihi4u")
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ihi4u"]
+
 [node name="Node2D" type="Node2D" unique_id=1828344440]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=758323955]
@@ -31,3 +37,17 @@ tile_set = SubResource("TileSet_yc4jl")
 
 [node name="Player" parent="." unique_id=807722964 instance=ExtResource("2_ihi4u")]
 position = Vector2(390, 280)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=404441425]
+z_index = 4
+material = SubResource("ShaderMaterial_a8iiw")
+offset_right = 800.0
+offset_bottom = 600.0
+texture = SubResource("PlaceholderTexture2D_ihi4u")
+
+[node name="Control" type="Control" parent="." unique_id=1501341829]
+z_index = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
