@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b8i0nq1ped6no"]
 
 [ext_resource type="Texture2D" uid="uid://byuon75b1a81c" path="res://assets/player.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://8a0l8lug2s7p" path="res://scenes/player.gd" id="1_g2els"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
 radius = 12.0415945
@@ -16,12 +17,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="Node2D" unique_id=807722964]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=26094267]
+z_index = 2
+motion_mode = 1
+script = ExtResource("1_g2els")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1938019415]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1919905868]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=243773339]
 shape = SubResource("CircleShape2D_g2els")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=842409246]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1272492691]
 sprite_frames = SubResource("SpriteFrames_qhqgy")
