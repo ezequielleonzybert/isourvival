@@ -1,18 +1,22 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1779749405
-icon.svg::CompressedTexture2D::5990777125833639068::1779127194::1779127201::1::::<><><>0<>0<>8335e9a84067c3f58d00507d3cb8c786<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1779749397
+::res://::1779845981
+::res://assets/::1779820316
 desert tile.png::CompressedTexture2D::865221389917380742::1779749397::1779749406::1::::<><><>0<>0<>e3a60b9ebf2d9e115731e642dbe802e1<>res://.godot/imported/desert tile.png-f8fb2181956886dd460c25012048b39f.ctex::
 grass tile.png::CompressedTexture2D::1018693518283332194::1779749397::1779749406::1::::<><><>0<>0<>081dba35b87442ff22cc0646efebb480<>res://.godot/imported/grass tile.png-ad566c2d283b76f4f25d353a7aa80dcb.ctex::
+icon.svg::CompressedTexture2D::5990777125833639068::1779127194::1779818185::1::::<><><>0<>0<>6613bab60e172eaeb9fdd1698251916b<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
 snow tile.png::CompressedTexture2D::819249412378397372::1779749397::1779749406::1::::<><><>0<>0<>b853b67a8ec5fef38251104741df1b80<>res://.godot/imported/snow tile.png-acb10cd25b1f6ff60a93fbfa52b6e643.ctex::
 tile with rock.png::CompressedTexture2D::8333727412684922850::1779749397::1779749406::1::::<><><>0<>0<>7afcac762ce72650462d6d6d9303d0b4<>res://.godot/imported/tile with rock.png-94fbb75b12d3c1b45a5a5532164029f9.ctex::
 tile with tree.png::CompressedTexture2D::2450032832717479509::1779749397::1779749406::1::::<><><>0<>0<>4a81b1b7ae79685200022cae3984da9a<>res://.godot/imported/tile with tree.png-c5aa38a910daf517a19a0fc8fe1cce3e.ctex::
 tileset1.png::CompressedTexture2D::1761316391262069350::1779138755::1779141039::1::::<><><>0<>0<>6b173139dc9ed1ff15bc47f59534b70e<>res://.godot/imported/tileset1.png-345862ff6934f6df46956d874cf0aa44.ctex::
 tileset2.png::CompressedTexture2D::1348237575133475396::1779141027::1779141173::1::::<><><>0<>0<>b58b06b8e7a24ca328f0c4fdc1bd6157<>res://.godot/imported/tileset2.png-896bdcbd2888c4c57386174c19980525.ctex::
+tileset_example.jpg::CompressedTexture2D::2499721910899249302::1779820288::1779820316::1::::<><><>0<>0<>f43c3cc605e42aca4492146e68396e73<>res://.godot/imported/tileset_example.jpg-22d1d83a2cf146392ec1028a4fd96611.ctex::
 tree.png::CompressedTexture2D::5663666509007121994::1779145001::1779145009::1::::<><><>0<>0<>d09a2c3fdd965eb41a59a5d9dc995294<>res://.godot/imported/tree.png-bf64094b89302dd1be83aa5edf9988ef.ctex::
-water tile.png::CompressedTexture2D::6511085833475563947::1779749397::1779749406::1::::<><><>0<>0<>60b72e5459b575726d142db4f17fb318<>res://.godot/imported/water tile.png-7da95d979e734c505faceff10ba68b6c.ctex::
-::res://scenes/::1779216480
-fog.gdshader::Shader::125397119171141462::1779216480::0::1::::<><><>0<>0<><>::
-player.gd::GDScript::2317771159788397071::1779133397::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::4720709567146121212::1779133895::0::1::::<><><>0<>0<><>::uid://byuon75b1a81c::::res://assets/player.png<>uid://8a0l8lug2s7p::::res://scenes/player.gd
-scenario_1.tscn::PackedScene::6410631800834347706::1779216480::0::1::::<><><>0<>0<><>::uid://bx8bt1v18ljtm::::res://assets/tileset.png<>uid://cmxr03qltqr1c::::res://assets/tree.png<>uid://b8i0nq1ped6no::::res://scenes/player.tscn<>uid://b10jix2omin3::::res://scenes/fog.gdshader
+water tile.png::CompressedTexture2D::2858033282274412643::1779809926::1779809930::1::::<><><>0<>0<>181e4b17c0094991b72f6cd18f8d58b3<>res://.godot/imported/water tile.png-7da95d979e734c505faceff10ba68b6c.ctex::
+::res://scenes/::1779840226
+main.tscn::PackedScene::6284735517163931637::1779818185::0::1::::<><><>0<>0<><>::uid://cxlmf0spsffli::::res://scenes/scenario_1.tscn
+player.tscn::PackedScene::4720709567146121212::1779818191::0::1::::<><><>0<>0<><>::uid://8a0l8lug2s7p::::res://scripts/player.gd<>uid://crl8hu7b5846c::::res://assets/icon.svg
+scenario_1.gd::GDScript::3142791669890998619::1779840157::0::1::::<>Node2D<><>0<>0<><>::
+scenario_1.tscn::PackedScene::6410631800834347706::1779840226::0::1::::<><><>0<>0<><>::uid://orpy63cnaxhi::::res://assets/grass tile.png<>uid://bk1nk4q7oivv4::::res://scenes/scenario_1.gd<>uid://cmxr03qltqr1c::::res://assets/tree.png<>uid://b8i0nq1ped6no::::res://scenes/player.tscn<>uid://mlecm1vgeueo::::res://assets/desert tile.png<>uid://b10jix2omin3::::res://scripts/fog.gdshader<>uid://lw36hmdstb6c::::res://assets/snow tile.png<>uid://dqy6jjqu7g37c::::res://assets/tile with rock.png<>uid://ba52xhk184t30::::res://assets/tile with tree.png<>uid://bgypnjr7nhmv8::::res://assets/water tile.png
+::res://scripts/::1779839238
+fog.gdshader::Shader::125397119171141462::1779839238::0::1::::<><><>0<>0<><>::
+player.gd::GDScript::2317771159788397071::1779818300::0::1::::<>CharacterBody2D<><>0<>0<><>::
