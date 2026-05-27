@@ -1,13 +1,9 @@
-extends Node2D
+extends Camera2D
 
 const FORCE = 30
 const DAMPING = .95
 
-var camera
 var velocity := Vector2.ZERO
-
-func _ready() -> void:
-	camera = $Camera2D
 
 func _process(delta: float) -> void:
 	var direction = Vector2.ZERO
@@ -18,4 +14,9 @@ func _process(delta: float) -> void:
 	
 	velocity += acceleration * delta
 	velocity *= DAMPING
-	camera.position += velocity
+	position += velocity
+	
+	if Input.is_action_just_pressed("zoom_in"):
+		zoom += Vector2(.1,.1)
+	elif Input.is_action_just_pressed("zoom_out"):
+		zoom -= Vector2(.1,.1)

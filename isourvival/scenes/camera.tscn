@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://le1jw7gcomlo"]
+
+[ext_resource type="Shader" uid="uid://b10jix2omin3" path="res://scripts/fog.gdshader" id="1_cvpoc"]
+[ext_resource type="Script" uid="uid://pf1tjjwrrks0" path="res://scripts/camera.gd" id="1_kod1s"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a8iiw"]
+shader = ExtResource("1_cvpoc")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ihi4u"]
+
+[node name="Camera2D" type="Camera2D" unique_id=922122216]
+script = ExtResource("1_kod1s")
+
+[node name="Fog" type="TextureRect" parent="." unique_id=1494008260]
+visible = false
+z_index = 4
+material = SubResource("ShaderMaterial_a8iiw")
+offset_right = 800.0
+offset_bottom = 600.0
+texture = SubResource("ViewportTexture_ihi4u")
+metadata/_edit_lock_ = true
