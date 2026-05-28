@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const FORCE = 150
+const FORCE = 100
 const DAMPING = .9
 
 var state = "idle"
