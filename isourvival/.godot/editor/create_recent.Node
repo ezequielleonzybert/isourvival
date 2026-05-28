@@ -1,3 +1,6 @@
+AudioStreamPlayer
+PointLight2D
+CanvasModulate
 Sprite2D
 AnimatedSprite2D
 Camera2D
