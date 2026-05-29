@@ -1,4 +1,5 @@
-res://scenes/player.tscn
+res://scenes/scenario_1.tscn
 res://scripts/fog.gdshader
-res://scripts/player.gd
-res://scenes/camera.tscn
+res://scenes/layers.gd
+res://scripts/layers.gd
+res://assets/tileset.tres
