@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://b8i0nq1ped6no" path="res://scenes/player.tscn" id="2_ihi4u"]
 [ext_resource type="Script" uid="uid://5ew2tjfoanqx" path="res://scripts/layers.gd" id="2_jn6pf"]
-[ext_resource type="TileSet" uid="uid://16074h4pnguj" path="res://assets/tileset.tres" id="3_jn6pf"]
 [ext_resource type="Script" uid="uid://dk2eukn5n4vxs" path="res://scripts/torch.gd" id="5_pxfm4"]
 [ext_resource type="Script" uid="uid://cl1d24do7xwii" path="res://scripts/pointer.gd" id="7_fhswh"]
 [ext_resource type="PackedScene" uid="uid://le1jw7gcomlo" path="res://scenes/camera.tscn" id="10_6f4qh"]
@@ -25,11 +24,6 @@ y_sort_enabled = true
 
 [node name="Layers" type="Node2D" parent="." unique_id=1303145060]
 script = ExtResource("2_jn6pf")
-
-[node name="Floor" type="TileMapLayer" parent="Layers" unique_id=758323955]
-z_as_relative = false
-y_sort_enabled = true
-tile_set = ExtResource("3_jn6pf")
 
 [node name="Player" parent="." unique_id=807722964 instance=ExtResource("2_ihi4u")]
 z_index = 3

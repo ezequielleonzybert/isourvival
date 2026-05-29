@@ -17,6 +17,6 @@ func _process(delta: float) -> void:
 	position += velocity
 	
 	if Input.is_action_just_pressed("zoom_in"):
-		zoom += Vector2(.1,.1)
+		zoom += Vector2(.5,.5)
 	elif Input.is_action_just_pressed("zoom_out"):
 		zoom -= Vector2(.1,.1)

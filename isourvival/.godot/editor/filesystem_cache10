@@ -1,23 +1,23 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1780083631
-::res://assets/::1780083023
+::res://::1780092425
+::res://assets/::1780094143
 anvil.png::CompressedTexture2D::2126337148729838625::1779992441::1779992734::1::::<><><>0<>0<>64c12cdd0e97e395c2ee39a8728d87be<>res://.godot/imported/anvil.png-7f24a8eecf5909767aef6f8a37d4fcfa.ctex::
 icon.svg::CompressedTexture2D::5990777125833639068::1779127194::1779818185::1::::<><><>0<>0<>6613bab60e172eaeb9fdd1698251916b<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
-new_tile_set.tres::TileSet::1890482250517789313::1780083666::0::1::::<><><>0<>0<><>::uid://d2d4ai7ggk4y3::::res://assets/tileset.png
 tile with rock.png::CompressedTexture2D::8333727412684922850::1779920665::1779920687::1::::<><><>0<>0<>7afcac762ce72650462d6d6d9303d0b4<>res://.godot/imported/tile with rock.png-94fbb75b12d3c1b45a5a5532164029f9.ctex::
 tile with tree.png::CompressedTexture2D::2450032832717479509::1779920665::1779920687::1::::<><><>0<>0<>4a81b1b7ae79685200022cae3984da9a<>res://.godot/imported/tile with tree.png-c5aa38a910daf517a19a0fc8fe1cce3e.ctex::
-tileset.png::CompressedTexture2D::9062315225260184752::1779994817::1779994871::1::::<><><>0<>0<>f67a3070e3d96f6a166c8866cdf3df8a<>res://.godot/imported/tileset.png-c50288acd069fa293d7940a084811264.ctex::
+tileset.png::CompressedTexture2D::9062315225260184752::1780094143::1780094147::1::::<><><>0<>0<>f67a3070e3d96f6a166c8866cdf3df8a<>res://.godot/imported/tileset.png-c50288acd069fa293d7940a084811264.ctex::
+tileset.tres::TileSet::1890482250517789313::1780093784::0::1::::<><><>0<>0<><>::uid://d2d4ai7ggk4y3::::res://assets/tileset.png
 tree.png::CompressedTexture2D::5663666509007121994::1779145001::1779145009::1::::<><><>0<>0<>d09a2c3fdd965eb41a59a5d9dc995294<>res://.godot/imported/tree.png-bf64094b89302dd1be83aa5edf9988ef.ctex::
 water tile.png::CompressedTexture2D::2858033282274412643::1779809926::1779809930::1::::<><><>0<>0<>181e4b17c0094991b72f6cd18f8d58b3<>res://.godot/imported/water tile.png-7da95d979e734c505faceff10ba68b6c.ctex::
-::res://scenes/::1780083631
+::res://scenes/::1780093848
 camera.tscn::PackedScene::781930710214961668::1780004603::0::1::::<><><>0<>0<><>::uid://b10jix2omin3::::res://scripts/fog.gdshader<>uid://pf1tjjwrrks0::::res://scripts/camera.gd
 main.tscn::PackedScene::6284735517163931637::1779818185::0::1::::<><><>0<>0<><>::uid://cxlmf0spsffli::::res://scenes/scenario_1.tscn
 player.tscn::PackedScene::4720709567146121212::1780004947::0::1::::<><><>0<>0<><>::uid://8a0l8lug2s7p::::res://scripts/player.gd<>uid://crl8hu7b5846c::::res://assets/icon.svg<>uid://oqd3ly5fv41u::::res://sounds/step.ogg
-scenario_1.tscn::PackedScene::6410631800834347706::1780083631::0::1::::<><><>0<>0<><>::uid://d2d4ai7ggk4y3::::res://assets/tileset.png<>uid://bk1nk4q7oivv4::::res://scripts/scenario_1.gd<>uid://cmxr03qltqr1c::::res://assets/tree.png<>uid://b8i0nq1ped6no::::res://scenes/player.tscn<>uid://5ew2tjfoanqx::::res://scripts/layers.gd<>uid://dk2eukn5n4vxs::::res://scripts/torch.gd<>uid://cl1d24do7xwii::::res://scripts/pointer.gd<>uid://le1jw7gcomlo::::res://scenes/camera.tscn
-::res://scripts/::1780083631
+scenario_1.tscn::PackedScene::6410631800834347706::1780093848::0::1::::<><><>0<>0<><>::uid://b8i0nq1ped6no::::res://scenes/player.tscn<>uid://5ew2tjfoanqx::::res://scripts/layers.gd<>uid://16074h4pnguj::::res://assets/tileset.tres<>uid://dk2eukn5n4vxs::::res://scripts/torch.gd<>uid://cl1d24do7xwii::::res://scripts/pointer.gd<>uid://le1jw7gcomlo::::res://scenes/camera.tscn
+::res://scripts/::1780093868
 camera.gd::GDScript::1064767602873274173::1779919712::0::1::::<>Camera2D<><>0<>0<><>::
-fog.gdshader::Shader::125397119171141462::1780079815::0::1::::<><><>0<>0<><>::
-layers.gd::GDScript::2115307822526298923::1780083571::0::1::::<>Node2D<><>0<>0<><>::
+fog.gdshader::Shader::125397119171141462::1780092462::0::1::::<><><>0<>0<><>::
+layers.gd::GDScript::2115307822526298923::1780093868::0::1::::<>Node2D<><>0<>0<><>::
 player.gd::GDScript::2317771159788397071::1780004600::0::1::::<>CharacterBody2D<><>0<>0<><>::
 pointer.gd::GDScript::5598824364915199912::1780002031::0::1::::<>PointLight2D<><>0<>0<><>::
 scenario_1.gd::GDScript::3142791669890998619::1780001227::0::1::::<>Node2D<><>0<>0<><>::

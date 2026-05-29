@@ -12,6 +12,8 @@ func _ready() -> void:
 		layer.tile_set = load("res://assets/tileset.tres")
 		layer.y_sort_enabled = true
 		layer.position.y += i*8
+		layer.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		
 		for x in range (-WORLD_SIZE/(2+i*2), WORLD_SIZE/(2+i*2)):
 			for y in range (-WORLD_SIZE/(1+i*2), WORLD_SIZE/(1+i*2)):
 				layer.set_cell(Vector2(x,y),0,Vector2(1,0))
