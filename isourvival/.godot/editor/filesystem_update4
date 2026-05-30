@@ -1,5 +1,6 @@
 res://scenes/scenario_1.tscn
-res://assets/tileset.tres
 res://scripts/fog.gdshader
+res://scenes/main.tscn
 res://scripts/layers.gd
 res://scripts/camera.gd
+res://scripts/player.gd

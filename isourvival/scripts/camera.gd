@@ -1,7 +1,7 @@
 extends Camera2D
 
-const FORCE = 30
-const DAMPING = .95
+const FORCE = 10
+const DAMPING = .05
 
 var velocity := Vector2.ZERO
 
@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 	var acceleration = direction.normalized() * FORCE
 	
 	velocity += acceleration * delta
-	velocity *= DAMPING
+	velocity *= pow(DAMPING, delta)
 	position += velocity
 	
 	if Input.is_action_just_pressed("zoom_in"):

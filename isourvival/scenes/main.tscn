@@ -1,7 +1,19 @@
 [gd_scene format=3 uid="uid://cvsmw8f6r2mnd"]
 
 [ext_resource type="PackedScene" uid="uid://cxlmf0spsffli" path="res://scenes/scenario_1.tscn" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://c5lvvjjymkrnp" path="res://scenes/debug.gd" id="2_0wfyh"]
 
 [node name="Main" type="Node2D" unique_id=1149320269]
 
 [node name="Scenario_1" parent="." unique_id=1828344440 instance=ExtResource("1_0wfyh")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2068932032]
+
+[node name="Debug" type="Label" parent="CanvasLayer" unique_id=450917722]
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 6.0
+offset_bottom = 28.0
+script = ExtResource("2_0wfyh")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true

@@ -10,6 +10,9 @@ var acceleration := Vector2.ZERO
 var direction := Vector2.ZERO
 var distance_counter := 0
 
+func _ready() -> void:
+	position 
+
 func _physics_process(delta: float) -> void:
 	
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):

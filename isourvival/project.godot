@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="isourvival"
-run/main_scene="uid://cxlmf0spsffli"
+run/main_scene="uid://cvsmw8f6r2mnd"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/icon.svg"
 
@@ -19,6 +19,13 @@ config/icon="res://assets/icon.svg"
 
 window/size/viewport_width=800
 window/size/viewport_height=600
+window/size/mode=3
+window/vsync/vsync_mode=0
+
+[filesystem]
+
+import/vsync/vsync_mode=1
+import/size/resizable=true
 
 [input]
 
