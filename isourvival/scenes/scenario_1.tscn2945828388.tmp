@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cxlmf0spsffli"]
+
+[ext_resource type="PackedScene" uid="uid://b8i0nq1ped6no" path="res://scenes/player.tscn" id="2_ihi4u"]
+[ext_resource type="Script" uid="uid://5ew2tjfoanqx" path="res://scripts/layers.gd" id="2_jn6pf"]
+[ext_resource type="Script" uid="uid://dk2eukn5n4vxs" path="res://scripts/torch.gd" id="5_pxfm4"]
+[ext_resource type="Script" uid="uid://cl1d24do7xwii" path="res://scripts/pointer.gd" id="7_fhswh"]
+[ext_resource type="PackedScene" uid="uid://le1jw7gcomlo" path="res://scenes/camera.tscn" id="10_6f4qh"]
+
+[sub_resource type="Gradient" id="Gradient_kwhi3"]
+offsets = PackedFloat32Array(0.21066651, 0.7639998, 0.87733316, 1)
+colors = PackedColorArray(0.7232479, 0.723248, 0.72324795, 1, 0.05642546, 0.056425467, 0.056425452, 1, 0.04520309, 0.04520309, 0.04520309, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_pxfm4"]
+gradient = SubResource("Gradient_kwhi3")
+width = 192
+height = 128
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.853846, 0.12564106)
+metadata/_snap_count = 2
+
+[node name="Scenario_1" type="Node2D" unique_id=1828344440]
+y_sort_enabled = true
+
+[node name="Layers" type="Node2D" parent="." unique_id=1303145060]
+script = ExtResource("2_jn6pf")
+
+[node name="Player" parent="." unique_id=807722964 instance=ExtResource("2_ihi4u")]
+z_index = 3
+y_sort_enabled = true
+
+[node name="Torch" type="PointLight2D" parent="Player" unique_id=875235060]
+visible = false
+position = Vector2(-1, -3)
+color = Color(0.8320764, 0.60748136, 0, 1)
+energy = 1.2
+texture = SubResource("GradientTexture2D_pxfm4")
+script = ExtResource("5_pxfm4")
+
+[node name="Camera" parent="." unique_id=922122216 instance=ExtResource("10_6f4qh")]
+
+[node name="Night" type="CanvasModulate" parent="." unique_id=730555454]
+visible = false
+color = Color(0.14509805, 0.18431373, 0.53333336, 1)
+
+[node name="Pointer" type="PointLight2D" parent="." unique_id=1497788273]
+visible = false
+color = Color(0.9287101, 0.6806339, 0, 1)
+energy = 0.5
+texture = SubResource("GradientTexture2D_pxfm4")
+script = ExtResource("7_fhswh")
