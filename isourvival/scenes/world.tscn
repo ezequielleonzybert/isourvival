@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cxlmf0spsffli"]
 
-[ext_resource type="PackedScene" uid="uid://b8i0nq1ped6no" path="res://scenes/player.tscn" id="2_ihi4u"]
-[ext_resource type="Script" uid="uid://5ew2tjfoanqx" path="res://scripts/layers.gd" id="2_jn6pf"]
-[ext_resource type="Script" uid="uid://dk2eukn5n4vxs" path="res://scripts/torch.gd" id="5_pxfm4"]
-[ext_resource type="Script" uid="uid://cl1d24do7xwii" path="res://scripts/pointer.gd" id="7_fhswh"]
-[ext_resource type="PackedScene" uid="uid://le1jw7gcomlo" path="res://scenes/camera.tscn" id="10_6f4qh"]
+[ext_resource type="Script" uid="uid://5ew2tjfoanqx" path="res://scripts/terrain.gd" id="1_71j4m"]
+[ext_resource type="PackedScene" uid="uid://b8i0nq1ped6no" path="res://scenes/player.tscn" id="2_qfnet"]
+[ext_resource type="Script" uid="uid://dk2eukn5n4vxs" path="res://scripts/torch.gd" id="3_i7141"]
+[ext_resource type="PackedScene" uid="uid://le1jw7gcomlo" path="res://scenes/camera.tscn" id="4_4mrxx"]
+[ext_resource type="Script" uid="uid://cl1d24do7xwii" path="res://scripts/pointer.gd" id="5_7r4gi"]
 
 [sub_resource type="Gradient" id="Gradient_kwhi3"]
 offsets = PackedFloat32Array(0.21066651, 0.7639998, 0.87733316, 1)
@@ -19,13 +19,13 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.853846, 0.12564106)
 metadata/_snap_count = 2
 
-[node name="Scenario_1" type="Node2D" unique_id=1828344440]
+[node name="World" type="Node2D" unique_id=1828344440]
 y_sort_enabled = true
 
-[node name="Layers" type="Node2D" parent="." unique_id=1303145060]
-script = ExtResource("2_jn6pf")
+[node name="Terrain" type="Node2D" parent="." unique_id=1303145060]
+script = ExtResource("1_71j4m")
 
-[node name="Player" parent="." unique_id=807722964 instance=ExtResource("2_ihi4u")]
+[node name="Player" parent="." unique_id=807722964 instance=ExtResource("2_qfnet")]
 z_index = 3
 y_sort_enabled = true
 
@@ -35,9 +35,9 @@ position = Vector2(-1, -3)
 color = Color(0.8320764, 0.60748136, 0, 1)
 energy = 1.2
 texture = SubResource("GradientTexture2D_pxfm4")
-script = ExtResource("5_pxfm4")
+script = ExtResource("3_i7141")
 
-[node name="Camera" parent="." unique_id=922122216 instance=ExtResource("10_6f4qh")]
+[node name="Camera" parent="." unique_id=922122216 instance=ExtResource("4_4mrxx")]
 
 [node name="Night" type="CanvasModulate" parent="." unique_id=730555454]
 visible = false
@@ -48,4 +48,4 @@ visible = false
 color = Color(0.9287101, 0.6806339, 0, 1)
 energy = 0.5
 texture = SubResource("GradientTexture2D_pxfm4")
-script = ExtResource("7_fhswh")
+script = ExtResource("5_7r4gi")

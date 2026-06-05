@@ -1,8 +1,6 @@
 extends Node2D
 
 const MAX_HEIGHT = 4
-const WIDTH = 100
-const HEIGHT = 200
 
 enum Type {WATER, MUD, GRASS, SNOW}
 
@@ -13,7 +11,7 @@ class Tile:
 	var air : bool = false
 	
 	func _init(x, y, layer_height, noise_value):
-		index = x+y*WIDTH
+		index = x+y* globals.WORLD_WIDTH
 		position = Vector2(x, y)
 		
 		if noise_value > 0.8 * MAX_HEIGHT:
@@ -24,8 +22,6 @@ class Tile:
 			set_type_coords(Type.WATER)
 		else:
 			set_type_coords(Type.MUD)
-
-			
 	
 	func set_type_coords(t : Type):
 		match t:
@@ -50,8 +46,8 @@ func _ready() -> void:
 		var layerData = []
 		var topLayer = makeLayer(layer_height)
 		
-		for y in range (HEIGHT):
-			for x in range (WIDTH):
+		for y in range (globals.WORLD_HEIGHT*2):
+			for x in range (globals.WORLD_WIDTH):
 				
 				var noise_value = (noise.get_noise_2d(x*2.0,y) + 1.0) / 2.0 * MAX_HEIGHT
 				var tile = Tile.new(x, y, layer_height, noise_value)

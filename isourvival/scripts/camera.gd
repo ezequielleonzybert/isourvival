@@ -5,6 +5,10 @@ const DAMPING = .05
 
 var velocity := Vector2.ZERO
 
+func _ready() -> void:
+	position.x = globals.WORLD_WIDTH/2.0 * globals.TILE_SIZE
+	position.y = globals.WORLD_HEIGHT/2.0 * globals.TILE_SIZE/2.0
+
 func _process(delta: float) -> void:
 	var direction = Vector2.ZERO
 	direction.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")

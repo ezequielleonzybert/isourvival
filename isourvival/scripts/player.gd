@@ -11,7 +11,8 @@ var direction := Vector2.ZERO
 var distance_counter := 0
 
 func _ready() -> void:
-	position 
+	position.x = globals.WORLD_WIDTH/2.0 * globals.TILE_SIZE
+	position.y = globals.WORLD_HEIGHT/2.0 * globals.TILE_SIZE/2.0
 
 func _physics_process(delta: float) -> void:
 	
